@@ -36,7 +36,7 @@ header nav {
     display: flex;
     justify-content: space-around;
     border: black solid 3px;
-    margin: -20px 60px;
+    margin: 0px 60px;
     padding: 5px;
 }
 
@@ -68,6 +68,12 @@ header nav a:hover {
       display: grid;
       grid: 44px / auto auto;
       grid-gap: 20px;
+      border: none;
+  }
+    header nav a {
+      padding: 1px 30px;
+      background-color: #e3e3e8;
+      border: 1px solid black;
   }
 }
 
@@ -81,9 +87,13 @@ header nav a:hover {
   }
   header nav {
       display: grid;
-      grid: 44px / auto;
-      grid-gap: 20px;
+      grid: 46px / auto;
+      grid-gap: 10px;
       border: none;
       margin: 0;
-  } 
+  }
+  header nav a {
+      padding: 1px 80px;
+      background-color: #e3e3e8;
+  }
 }
