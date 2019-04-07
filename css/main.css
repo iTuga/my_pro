@@ -49,6 +49,105 @@ header nav a:hover {
     color: red;
     text-decoration: underline;
 }
+article {
+    font-family: Vollkorn, sans-serif;
+    font-size: 1.1rem;
+}
+
+article h2 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    display: grid;
+    grid-template-areas: "text content-foto"
+                         "content-foto-2 text-2"
+                         "text-3 text-3";
+}
+
+section .text {
+    grid-area: text;
+    padding: 10px;
+}
+section .content-foto {
+    grid-area: content-foto;
+    padding: 10px;
+}
+
+section .content-foto img {
+    max-width: 450px;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+section .text-2 {
+    grid-area: text-2;
+    padding: 10px;
+}
+section .content-foto-2 {
+    grid-area: content-foto-2;
+    padding: 10px;
+}
+
+section .content-foto-2 img {
+    max-width: 500px;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+section .text-3 {
+    grid-area: text-3;
+    padding: 10px;
+}
+
+article .objects-for-sale {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+article .foto-objects {
+   text-align: center;
+}
+
+article .foto-objects img {
+    max-width: 250px;
+}
+
+.big {
+    max-width: 350px;
+}
+
+footer {
+    background-color: #c4c5c6;
+}
+
+footer button {
+    font-size: 1.5rem;
+    color: #525354;
+    margin: 20px;
+    text-align: center;
+}
+
+footer .menu {
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+  section {
+      display: grid;
+      grid-template-areas: "text"
+                           "content-foto"
+                           "text-2"
+                           "content-foto-2"
+                           "text-3"
+  }
+}
+
+
 @media (max-width: 700px) {
   header .logo h1 a {
       font-size: 5rem;
@@ -67,17 +166,16 @@ header nav a:hover {
   }
   header nav {
       display: grid;
-      grid: 44px / auto auto;
+      grid: 52px / auto auto;
       grid-gap: 20px;
       border: none;
   }
   header nav a {
       padding: 1px 30px;
-      background-color: #e3e3e8;
-      border: 1px solid black;
+      border: 3px solid black;
   }
   header nav a:hover {
-      border: 1px solid red;
+      border: 3px solid red;
       text-decoration: none;
       background-color: #f7f7d7;
   }
@@ -92,13 +190,12 @@ header nav a:hover {
   }
   header nav {
       display: grid;
-      grid: 46px / auto;
+      grid: 52px / auto;
       grid-gap: 10px;
       border: none;
       margin: 0;
   }
   header nav a {
       padding: 1px 80px;
-      background-color: #e3e3e8;
   }
 }
