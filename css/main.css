@@ -58,7 +58,7 @@ article h2 {
     font-size: 3rem;
     text-align: center;
     padding: 0;
-    margin: 0;
+    margin: 30px;
 }
 
 section {
@@ -102,6 +102,9 @@ section .text-3 {
     grid-area: text-3;
     padding: 10px;
 }
+article .best-button {
+    
+}
 
 article .objects-for-sale {
     font-size: 2rem;
@@ -117,8 +120,10 @@ article .foto-objects img {
     max-width: 250px;
 }
 
-.big {
-    max-width: 350px;
+article .foto-objects img:hover {
+    max-width: 260px;
+    border: 2px solid grey;
+    opacity: 0.8;
 }
 
 footer {
@@ -129,11 +134,19 @@ footer button {
     font-size: 1.5rem;
     color: #525354;
     margin: 20px;
-    text-align: center;
+    border-radius: 5px;
+}
+footer button:hover {
+    background-color: #ed9261;
 }
 
 footer .menu {
     text-align: center;
+}
+
+footer .menu a {
+    text-decoration: none;
+    color: #565554;
 }
 
 @media (max-width: 900px) {
@@ -198,4 +211,9 @@ footer .menu {
   header nav a {
       padding: 1px 80px;
   }
+}
+
+h6 {
+    color: red;
+    font-size: 1rem;
 }

@@ -15,4 +15,17 @@ function bigPictures(e) {
     return document.getElementsByClassName('.big');
 }
 
+const bestButton = document.querySelector('.best-button');
+bestButton.addEventListener('click', dontClick);
 
+function dontClick(e) {
+    e.preventDefault();
+    const xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status == 200) {
+            document.querySelector('.simple-ajax').innerHTML = xhr.responseText;
+        }
+    }
+    xhr.open('GET', 'client-data.html', true);
+    xhr.send();
+}
