@@ -17,11 +17,11 @@ header .logo {
     align-items: flex-end;
 }
 header .logo h1 {
-    height: 150px;
+    height: 120px;
 }
 
 header .logo h1 a {
-    color: #8bf9ca;
+    color: #d2f4f4;
     font-family: Abril Fatface, sans-serif;
     font-size: 7rem;
     text-decoration: none;
@@ -29,7 +29,7 @@ header .logo h1 a {
 }
 
 header .logo h1 a:hover {
-    font-size: 9rem;
+    font-size: 8rem;
     color: #d2f4f4;
 }
 
@@ -46,7 +46,7 @@ header nav {
 
 header nav a {
     text-decoration: none;
-    color: black;
+    color: #424ef4;
     font-family: Vollkorn,sans-serif;
 }
 
@@ -110,10 +110,6 @@ section .text-3 {
 article .best-button {
     
 }
-article h3 {
-    font-size: 2.2rem;
-    text-align: center;
-}
 
 article .objects-for-sale {
     display: grid;
@@ -121,21 +117,23 @@ article .objects-for-sale {
     height: 450px;
 }
 
-article .objects-for-sale .objects-lviv {
+article .objects-for-sale .object-lviv {
     grid-area: objects-lviv;
 }
 
-article .objects-for-sale .objects-kyiv {
+article .objects-for-sale .object-kyiv {
     grid-area: objects-kyiv;
 }
 
-article .objects-for-sale .objects-dnipro {
+article .objects-for-sale .object-dnipro {
     grid-area: objects-dnipro;
 
 }
 
 article .objects-for-sale img {
-    width: 280px;
+    width: 310px;
+    background-size: cover;
+    background-position: center;
 }
 
 article .objects-for-sale h5 {
@@ -145,7 +143,7 @@ article .objects-for-sale h5 {
 
 article .objects-for-sale img:hover {
     -webkit-transform: scale(2);
-    transform: scale(1.5);
+    transform: scale(1.2);
     transition: 1s;
 }
 
@@ -174,14 +172,14 @@ footer .menu a {
     color: #565554;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1030px) {
   section {
       display: grid;
       grid-template-areas: "text"
                            "content-foto"
                            "text-2"
                            "content-foto-2"
-                           "text-3"
+                           "text-3";
   }
 }
 
@@ -212,14 +210,15 @@ footer .menu a {
       padding: 1px 30px;
       border: 3px solid black;
   }
-  header nav a:hover {
-      border: 3px solid red;
-      text-decoration: none;
-      background-color: #f7f7d7;
+  section .content-foto img {
+      max-width: 400px;
+  }
+  section .content-foto-2 img {
+      max-width: 400px;
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 430px) {
   header .logo h1 a {
       font-size: 3rem;
   }
@@ -236,9 +235,11 @@ footer .menu a {
   header nav a {
       padding: 1px 80px;
   }
+  section .content-foto img {
+      max-width: 300px;
+  }
+  section .content-foto-2 img {
+      max-width: 300px;
+  }
 }
 
-h6 {
-    color: red;
-    font-size: 1rem;
-}
