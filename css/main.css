@@ -8,24 +8,29 @@ body {
 }
 
 header .logo {
-    background-image: url(../img/logo-1.jpg);
-    min-height: 300px;
+    background-image: url(../img/logo-build.jpeg);
+    min-height: 500px;
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
+header .logo h1 {
+    height: 150px;
+}
 
 header .logo h1 a {
-    color: black;
+    color: #8bf9ca;
     font-family: Abril Fatface, sans-serif;
     font-size: 7rem;
     text-decoration: none;
+    transition: 2s;
 }
 
 header .logo h1 a:hover {
-    font-size: 8rem;
+    font-size: 9rem;
+    color: #d2f4f4;
 }
 
 header nav {
@@ -105,29 +110,49 @@ section .text-3 {
 article .best-button {
     
 }
+article h3 {
+    font-size: 2.2rem;
+    text-align: center;
+}
 
 article .objects-for-sale {
-    font-size: 2rem;
+    display: grid;
+    grid-template-areas: "objects-lviv objects-kyiv objects-dnipro";
+    height: 450px;
+}
+
+article .objects-for-sale .objects-lviv {
+    grid-area: objects-lviv;
+}
+
+article .objects-for-sale .objects-kyiv {
+    grid-area: objects-kyiv;
+}
+
+article .objects-for-sale .objects-dnipro {
+    grid-area: objects-dnipro;
+
+}
+
+article .objects-for-sale img {
+    width: 280px;
+}
+
+article .objects-for-sale h5 {
     text-align: center;
-    padding: 0;
-    margin: 0;
-}
-article .foto-objects {
-   text-align: center;
+    font-size: 2rem;
 }
 
-article .foto-objects img {
-    max-width: 250px;
-}
-
-article .foto-objects img:hover {
-    max-width: 260px;
-    border: 2px solid grey;
-    opacity: 0.8;
+article .objects-for-sale img:hover {
+    -webkit-transform: scale(2);
+    transform: scale(1.5);
+    transition: 1s;
 }
 
 footer {
     background-color: #c4c5c6;
+    border: 2px solid grey;
+    border-radius: 5px;
 }
 
 footer button {
