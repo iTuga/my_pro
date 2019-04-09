@@ -39,14 +39,15 @@ header nav {
     font-size: 2rem;
     display: flex;
     justify-content: space-around;
-    border: black solid 3px;
-    margin: 0px 60px;
+    border: #90dba2 solid 3px;
+    border-top: none;
+    margin: 0;
     padding: 5px;
 }
 
 header nav a {
     text-decoration: none;
-    color: #424ef4;
+    color: #013b84;
     font-family: Vollkorn,sans-serif;
 }
 
@@ -64,50 +65,85 @@ article h2 {
     text-align: center;
     padding: 0;
     margin: 30px;
+    color: #013b84;
 }
 
-section {
+article h3 {
+    font-size: 2rem;
+    text-align: center;
+    color: #013b84;
+}
+
+section .about-company {
     display: grid;
     grid-template-areas: "text content-foto"
                          "content-foto-2 text-2"
                          "text-3 text-3";
 }
 
-section .text {
+section .about-company .text {
     grid-area: text;
     padding: 10px;
 }
-section .content-foto {
+section .about-company .content-foto {
     grid-area: content-foto;
     padding: 10px;
 }
 
-section .content-foto img {
+section .about-company .content-foto img {
     max-width: 450px;
     border-radius: 10px;
-    border: 3px solid black;
+    border: 3px solid #90dba2;
 }
 
-section .text-2 {
+section .about-company .text-2 {
     grid-area: text-2;
     padding: 10px;
 }
-section .content-foto-2 {
+section .about-company .content-foto-2 {
     grid-area: content-foto-2;
     padding: 10px;
 }
 
-section .content-foto-2 img {
+section .about-company .content-foto-2 img {
     max-width: 500px;
     border-radius: 10px;
-    border: 3px solid black;
+    border: 3px solid #90dba2;
 }
 
-section .text-3 {
+section .about-company .text-3 {
     grid-area: text-3;
     padding: 10px;
 }
 
+section .project-1 {
+
+}
+
+article .objects-for-sale {
+    text-align: center;
+}
+
+article .objects-for-sale {
+    font-size: 2rem;
+    color: #013b84;
+}
+
+article .objects-for-sale img {
+    width: 600px;
+}
+
+article .objects-for-sale .object-lviv {
+    
+}
+
+article .objects-for-sale .object-kyiv {
+    
+}
+
+article .objects-for-sale .object-dnipro {
+    
+}
 
 article .objects-for-sale img:hover {
     -webkit-transform: scale(2);
@@ -116,9 +152,10 @@ article .objects-for-sale img:hover {
 }
 
 footer {
-    background-color: #c4c5c6;
-    border: 2px solid grey;
+    background-color: #d9ddda;
+    border: 2px solid #90dba2;
     border-radius: 5px;
+    margin-top: 50px;
 }
 
 footer button {
@@ -141,7 +178,7 @@ footer .menu a {
 }
 
 @media (max-width: 1030px) {
-  section {
+  section .about-company {
       display: grid;
       grid-template-areas: "text"
                            "content-foto"
@@ -158,6 +195,9 @@ footer .menu a {
   }
   header .logo h1 a:hover {
       font-size: 6rem;
+  }
+  article .objects-for-sale img {
+      width: 500px;
   }
 }
 
@@ -176,13 +216,16 @@ footer .menu a {
   }
   header nav a {
       padding: 1px 30px;
-      border: 3px solid black;
+      border: 3px solid #91bcf2;
   }
-  section .content-foto img {
+  section .about-company .content-foto img {
       max-width: 400px;
   }
-  section .content-foto-2 img {
+  section .about-company .content-foto-2 img {
       max-width: 400px;
+  }
+  article .objects-for-sale img {
+      width: 430px;
   }
 }
 
@@ -203,10 +246,13 @@ footer .menu a {
   header nav a {
       padding: 1px 80px;
   }
-  section .content-foto img {
+  section .about-company .content-foto img {
       max-width: 300px;
   }
-  section .content-foto-2 img {
+  section .about-company .content-foto-2 img {
+      max-width: 300px;
+  }
+  article .objects-for-sale img {
       max-width: 300px;
   }
 }
