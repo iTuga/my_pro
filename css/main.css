@@ -107,39 +107,7 @@ section .text-3 {
     grid-area: text-3;
     padding: 10px;
 }
-article .best-button {
-    
-}
 
-article .objects-for-sale {
-    display: grid;
-    grid-template-areas: "objects-lviv objects-kyiv objects-dnipro";
-    height: 450px;
-}
-
-article .objects-for-sale .object-lviv {
-    grid-area: objects-lviv;
-}
-
-article .objects-for-sale .object-kyiv {
-    grid-area: objects-kyiv;
-}
-
-article .objects-for-sale .object-dnipro {
-    grid-area: objects-dnipro;
-
-}
-
-article .objects-for-sale img {
-    width: 310px;
-    background-size: cover;
-    background-position: center;
-}
-
-article .objects-for-sale h5 {
-    text-align: center;
-    font-size: 2rem;
-}
 
 article .objects-for-sale img:hover {
     -webkit-transform: scale(2);
