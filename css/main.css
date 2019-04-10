@@ -128,6 +128,8 @@ article .objects-for-sale {
 
 article .objects-for-sale img {
     width: 600px;
+    border-radius: 10px;
+    border: 3px solid #90dba2;
 }
 
 article .objects-for-sale img:hover {
@@ -162,6 +164,7 @@ footer .menu a {
                            "text-2"
                            "content-foto-2"
                            "text-3";
+      text-align: center;
   }
 }
 
@@ -201,6 +204,7 @@ footer .menu a {
   section .about-company .content-foto-2 img {
       max-width: 400px;
   }
+  
   article .objects-for-sale img {
       width: 430px;
   }
