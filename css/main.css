@@ -141,17 +141,9 @@ footer {
     border: 2px solid #90dba2;
     border-radius: 5px;
     margin-top: 50px;
+    height: 80px;
 }
 
-footer button {
-    font-size: 1.5rem;
-    color: #525354;
-    margin: 20px;
-    border-radius: 5px;
-}
-footer button:hover {
-    background-color: #ed9261;
-}
 
 footer .menu {
     text-align: center;
