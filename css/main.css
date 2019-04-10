@@ -74,6 +74,12 @@ article h3 {
     color: #013b84;
 }
 
+article h5 {
+    font-size: 2rem;
+    color: #013b84;
+    margin: 20px;
+}
+
 section .about-company {
     display: grid;
     grid-template-areas: "text content-foto"
@@ -116,38 +122,17 @@ section .about-company .text-3 {
     padding: 10px;
 }
 
-section .project-1 {
-
-}
-
 article .objects-for-sale {
     text-align: center;
-}
-
-article .objects-for-sale {
-    font-size: 2rem;
-    color: #013b84;
 }
 
 article .objects-for-sale img {
     width: 600px;
 }
 
-article .objects-for-sale .object-lviv {
-    
-}
-
-article .objects-for-sale .object-kyiv {
-    
-}
-
-article .objects-for-sale .object-dnipro {
-    
-}
-
 article .objects-for-sale img:hover {
     -webkit-transform: scale(2);
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 1s;
 }
 
