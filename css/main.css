@@ -123,12 +123,12 @@ section .about-company .text-3 {
 }
 section .project-1 img:hover {
     -webkit-transform: scale(2);
-    transform: scale(1.3);
+    transform: scale(1.2);
     transition: 0.5s;
 }
 section .project-2 img:hover {
     -webkit-transform: scale(2);
-    transform: scale(1.3);
+    transform: scale(1.2);
     transition: 0.5s;
 }
 
