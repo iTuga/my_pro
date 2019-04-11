@@ -121,25 +121,53 @@ section .about-company .text-3 {
     grid-area: text-3;
     padding: 10px;
 }
+section .project-1 img:hover {
+    -webkit-transform: scale(2);
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+section .project-2 img:hover {
+    -webkit-transform: scale(2);
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+
 section .kyiv {
+    background-image: url(../img/fon2.jpg);
     border-radius: 10px;
     border: 3px solid #eaebed;
     padding: 20px;
     margin: 20px;
 }
 section .lviv {
+    background-image: url(../img/fon3.jpg);
     border-radius: 10px;
     border: 3px solid #eaebed;
     padding: 20px;
     margin: 20px;
 }
 section .dnipro {
+    background-image: url(../img/fon1.jpg);
     border-radius: 10px;
     border: 3px solid #eaebed;
     padding: 20px;
     margin: 20px;
 }
-
+section .kyiv:hover {
+    -webkit-transform: scale(2);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+section .lviv:hover {
+    -webkit-transform: scale(2);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+section .dnipro:hover {
+    -webkit-transform: scale(2);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
 section .info-tel {
     border-radius: 10px;
     border: 3px solid #90dba2;
@@ -155,9 +183,6 @@ section .info-office {
 section  img {
     border-radius: 10px;
     border: 3px solid #90dba2;
-}
-section .modal-window {
-    margin: 150px;
 }
 
 article .objects-for-sale img {
