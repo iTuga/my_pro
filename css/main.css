@@ -122,6 +122,10 @@ section .about-company .text-3 {
     padding: 10px;
 }
 
+section .project-1, .project-2 {
+    text-align: center;
+}
+
 article .objects-for-sale {
     text-align: center;
 }
@@ -208,6 +212,12 @@ footer .menu a {
   article .objects-for-sale img {
       width: 430px;
   }
+  section .project-1 img {
+      width: 400px;
+  }
+  section .project-2 img {
+      width: 400px;
+  }
 }
 
 @media (max-width: 430px) {
@@ -235,6 +245,12 @@ footer .menu a {
   }
   article .objects-for-sale img {
       max-width: 300px;
+  }
+  section .project-1 img {
+      width: 300px;
+  }
+  section .project-2 img {
+      width: 300px;
   }
 }
 
