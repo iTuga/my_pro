@@ -5,6 +5,7 @@
 body {
     max-width: 980px;
     margin: auto;
+    text-align: center;
 }
 
 header .logo {
@@ -62,7 +63,6 @@ article {
 
 article h2 {
     font-size: 3rem;
-    text-align: center;
     padding: 0;
     margin: 30px;
     color: #013b84;
@@ -70,8 +70,8 @@ article h2 {
 
 article h3 {
     font-size: 2rem;
-    text-align: center;
     color: #013b84;
+    margin: 30px
 }
 
 article h5 {
@@ -121,13 +121,40 @@ section .about-company .text-3 {
     grid-area: text-3;
     padding: 10px;
 }
-
-section .project-1, .project-2 {
-    text-align: center;
+section .kyiv {
+    border-radius: 10px;
+    border: 3px solid #eaebed;
+    padding: 20px;
+    margin: 20px;
+}
+section .lviv {
+    border-radius: 10px;
+    border: 3px solid #eaebed;
+    padding: 20px;
+    margin: 20px;
+}
+section .dnipro {
+    border-radius: 10px;
+    border: 3px solid #eaebed;
+    padding: 20px;
+    margin: 20px;
 }
 
-article .objects-for-sale {
-    text-align: center;
+section .info-tel {
+    border-radius: 10px;
+    border: 3px solid #90dba2;
+    padding: 30px;
+    margin: 20px;
+}
+section .info-office {
+    border-radius: 10px;
+    border: 3px solid #90dba2;
+    padding: 30px;
+}
+
+section  img {
+    border-radius: 10px;
+    border: 3px solid #90dba2;
 }
 
 article .objects-for-sale img {
@@ -143,21 +170,22 @@ article .objects-for-sale img:hover {
 }
 
 footer {
-    background-color: #d9ddda;
+    background-color: #eaebed;
     border: 2px solid #90dba2;
     border-radius: 5px;
+    border-top: none;
     margin-top: 50px;
-    height: 80px;
+    height: 100px;
 }
-
-
 footer .menu {
-    text-align: center;
+    margin: 20px;
 }
+
 
 footer .menu a {
     text-decoration: none;
     color: #565554;
+    margin: 15px;
 }
 
 @media (max-width: 1030px) {
@@ -168,7 +196,6 @@ footer .menu a {
                            "text-2"
                            "content-foto-2"
                            "text-3";
-      text-align: center;
   }
 }
 
@@ -237,20 +264,17 @@ footer .menu a {
   header nav a {
       padding: 1px 80px;
   }
-  section .about-company .content-foto img {
+  section img {
       max-width: 300px;
   }
-  section .about-company .content-foto-2 img {
-      max-width: 300px;
+  section .about-company img {
+      width: 300px;
   }
   article .objects-for-sale img {
-      max-width: 300px;
-  }
-  section .project-1 img {
       width: 300px;
   }
-  section .project-2 img {
-      width: 300px;
+  footer .menu a {
+      margin: 2px;
   }
 }
 
